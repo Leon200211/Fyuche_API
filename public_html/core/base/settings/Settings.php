@@ -40,8 +40,9 @@ class Settings
             'dir' => false
         ],
         'user' => [
+            'alias' => 'notebook',
             'path' => 'core/user/controllers/',
-            'hrUrl' => true,
+            'hrUrl' => false,
             'routes' => [
 
             ]

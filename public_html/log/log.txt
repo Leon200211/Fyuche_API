@@ -1,0 +1,72 @@
+Fault: 10-01-2023 17:45:18 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 17:48:41 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 17:49:46 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 17:50:27 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 17:51:27 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 17:51:29 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 17:52:32 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 17:53:55 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 18:03:30 - Не верное имя файла для подключения - core/user/controllers/CoreController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:03:35 - Не верное имя файла для подключения - core/user/controllers/CoreController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:03:39 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 18:04:14 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 18:04:20 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 18:04:45 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 18:04:49 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 18:05:36 - Не верное имя файла для подключения - core/user/controllers/SdfController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:05:45 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 18:07:36 - Class "core\user\controllers\IndexController" does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+

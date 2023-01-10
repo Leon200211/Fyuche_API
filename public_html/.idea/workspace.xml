@@ -10,6 +10,11 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="fyuche.api" id="d3d89f35-af57-4250-93bf-925bd83a6b81" name="fyuche.api" />
+    </servers>
+  </component>
   <component name="ProjectId" id="2K8XhY4WTqraF9o3wIIYDDDfcQP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -19,16 +24,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/base/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/user/controllers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\fyuche_api\public_html\core\user\controllers" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\controllers" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\messages" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\exceptions" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\settings" />
-      <recent name="C:\OpenServer\domains\fyuche_api\public_html" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\core" />
@@ -42,11 +47,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673357303101</updated>
-      <workItem from="1673357304327" duration="2096000" />
+      <workItem from="1673357304327" duration="6563000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/core/base/controllers/BaseController.php</url>
+          <line>43</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
