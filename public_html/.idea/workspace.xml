@@ -24,16 +24,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/user/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/user" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\fyuche_api\public_html\core\user" />
+      <recent name="C:\OpenServer\domains\fyuche_api\public_html\core\base" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\core\user\controllers" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\controllers" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\messages" />
-      <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\exceptions" />
-      <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\settings" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\core" />
@@ -47,22 +47,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673357303101</updated>
-      <workItem from="1673357304327" duration="8745000" />
+      <workItem from="1673357304327" duration="10344000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/core/base/controllers/RouteController.php</url>
-          <line>122</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

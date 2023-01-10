@@ -150,3 +150,35 @@ Fault: 10-01-2023 18:56:38 - Method core\user\controllers\EditController::reques
 file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
  In line56
 
+Fault: 10-01-2023 19:12:01 - Отсутствует шаблон - templates/default/index
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 19:12:29 - Отсутствует шаблон - templates/default/index
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 19:12:42 - Отсутствует шаблон - templates/default/add
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 19:12:46 - Отсутствует шаблон - templates/default/add
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 19:12:51 - Отсутствует шаблон - templates/default/add
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 19:12:57 - Отсутствует шаблон - templates/default/delete
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 19:13:36 - Отсутствует шаблон - templates/default/edit
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 19:13:42 - Отсутствует шаблон - templates/default/show
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
