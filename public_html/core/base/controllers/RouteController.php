@@ -98,11 +98,21 @@ class RouteController extends BaseController
 
             }else{
 
-                $hrUrl = $this->routes['user']['hrUrl'];
+                if(!empty($url[0]) and $url[0] === $this->routes['user']['alias']) {
 
-                $this->controller = $this->routes['user']['path']; // human readable url
 
-                $route = 'user';
+                    array_shift($url); // удаляем нулевой элемент 'ключевое слово для админа'
+
+                    $this->controller = $this->routes['user']['path']; // путь к админ контроллеру
+                    $hrUrl = $this->routes['user']['hrUrl'];  // human readable url
+                    $route = 'user';
+
+                }else{
+                    $hrUrl = $this->routes['user']['hrUrl']; // human readable url
+                    $this->controller = $this->routes['user']['path'];
+                    $route = 'user';
+                }
+
             }
 
             // Метод для создания маршрута
@@ -110,7 +120,7 @@ class RouteController extends BaseController
 
 
             // работа с алиасами
-            if(@$url[1]){
+            if(isset($url[1])){
                 $count = count($url);
                 $key = '';
 
@@ -133,6 +143,8 @@ class RouteController extends BaseController
                 }
 
             }
+
+
         }else{
             throw new RouteException("Не корректная директория сайта", 1);
         }

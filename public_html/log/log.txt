@@ -70,3 +70,83 @@ Fault: 10-01-2023 18:07:36 - Class "core\user\controllers\IndexController" does 
 file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
  In line56
 
+Fault: 10-01-2023 18:26:30 - Не верное имя файла для подключения - core/user/controllers/AddController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:26:38 - Не верное имя файла для подключения - core/user/controllers/NotebookController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:27:00 - Не верное имя файла для подключения - core/admin/controllers/IndexController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:27:10 - Не верное имя файла для подключения - core/user/controllers/NotebookController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:32:03 - Не верное имя файла для подключения - core/admin/controllers/IndexController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:32:53 - Не верное имя файла для подключения - IndexController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:37:08 - Не верное имя файла для подключения - core/user/controllers/IdController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:37:14 - Не верное имя файла для подключения - core/user/controllers/2Controller
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:41:02 - Не верное имя файла для подключения - core/user/controllers/2Controller
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:45:47 - Не верное имя файла для подключения - core/user/controllers/2Controller
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:47:24 - Не верное имя файла для подключения - core/user/controllers/2Controller
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:48:19 - Не верное имя файла для подключения - core/user/controllers/AddController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:48:23 - Не верное имя файла для подключения - core/user/controllers/EditController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:48:31 - Не верное имя файла для подключения - core/user/controllers/EditController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:48:35 - Не верное имя файла для подключения - core/user/controllers/EditController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:48:50 - Не верное имя файла для подключения - core/user/controllers/ShowController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:49:23 - Не верное имя файла для подключения - core/user/controllers/ShowController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line39
+
+Fault: 10-01-2023 18:55:16 - Method core\user\controllers\EditController::request() does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 18:56:34 - Method core\user\controllers\EditController::request() does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+
+Fault: 10-01-2023 18:56:38 - Method core\user\controllers\EditController::request() does not exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line56
+

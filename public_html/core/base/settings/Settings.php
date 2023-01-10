@@ -80,6 +80,13 @@ class Settings
         'gallery_img' => ['gallery_img']
     ];
 
+    // паттерны для передачи данных
+    private $patterns = [
+        'int' => '[0-9]+',
+        'str' => '[a-zA-Z\.\-_%]+',
+        'any' => '[a-zA-Z0-9\.\-_%]+'
+    ];
+
     // для админ панели
     private $blockNeedle = [
         'vg-rows' => [],
