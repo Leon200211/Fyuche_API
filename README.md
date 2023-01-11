@@ -88,7 +88,7 @@
 
 ### Изменение данных
 
-![Безымянный](https://user-images.githubusercontent.com/91278041/211827354-412de216-51f9-44f8-a4b7-109602ed5775.png)
+![211827354-412de216-51f9-44f8-a4b7-109602ed5775](https://user-images.githubusercontent.com/91278041/211828186-6d9798a8-5b9f-416c-9eb4-18376e7e2c87.png)
 
 ### Удаление данных
 
