@@ -78,3 +78,19 @@
 
 ## Результат работы api
 
+### Вывод данных
+
+![Безымянный](https://user-images.githubusercontent.com/91278041/211826383-10d767ae-02f0-4c50-aa37-c500cab6a7c7.png)
+
+### Добавление данных
+
+![Безымянный](https://user-images.githubusercontent.com/91278041/211826108-bb9d0251-b601-4736-9f01-24c6c3f8a806.png)
+
+### Изменение данных
+
+![Безымянный](https://user-images.githubusercontent.com/91278041/211827354-412de216-51f9-44f8-a4b7-109602ed5775.png)
+
+### Удаление данных
+
+![image](https://user-images.githubusercontent.com/91278041/211827917-0124f373-4be6-4a0c-95b7-b162eeeebe0b.png)
+
