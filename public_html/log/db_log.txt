@@ -1,0 +1,44 @@
+Fault: 11-01-2023 13:28:09 - Ошибка в SQL запросе: SELECT notebook.id as id,notebook.full_name as name FROM notebook     - 2006 MySQL server has gone away
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 13:59:17 - Ошибка в SQL запросе: SHOW COLUMNS FROM id - 1146 Table 'fyuche_api.id' doesn't exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 14:00:07 - Ошибка в SQL запросе: SHOW COLUMNS FROM id - 1146 Table 'fyuche_api.id' doesn't exist
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 14:07:51 - Ошибка в SQL запросе: SELECT notebook.id,notebook.id_record,notebook.full_name,notebook.company,notebook.phone,notebook.email,notebook.date_of_birth,notebook.photo,notebook.note FROM notebook  WHERE    - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 14:35:41 - Ошибка в SQL запросе: INSERT INTO notebook (full_name,date_of_birth) VALUE ('leon',NOW()) - 1364 Field 'id_record' doesn't have a default value
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 14:43:08 - Ошибка в SQL запросе: INSERT INTO notebook (full_name,phone,date_of_birth) VALUE ('leon','213',NOW()) - 1364 Field 'id_record' doesn't have a default value
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 14:45:12 - Ошибка в SQL запросе: INSERT INTO notebook (full_name,phone,date_of_birth) VALUE ('leon','213',NOW()) - 1364 Field 'id_record' doesn't have a default value
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 14:46:33 - Ошибка в SQL запросе: INSERT INTO notebook (full_name,phone,id,date_of_birth) VALUE ('leon','213',NULL,NOW()) - 1364 Field 'id_record' doesn't have a default value
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 14:46:55 - Ошибка в SQL запросе: INSERT INTO notebook (full_name,phone,id) VALUE ('leon','213',NULL) - 1364 Field 'id_record' doesn't have a default value
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 14:55:37 - Ошибка в SQL запросе: UPDATE notebook SET full_name='leon',phone='213',id_record='100',company='fgd',email='',date_of_birth='22.11.22',photo='dfggdr',note='fdgdfg',id=NULL WHERE id='1'  - 1048 Column 'id' cannot be null
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 15:11:03 - Ошибка в SQL запросе: INSERT INTO notebook (full_name,phone,company,email,date_of_birth,photo,note,id) VALUE ('leon','213','fgd','er','22.11.22','dfggdr','fdgdfg',NULL) - 1364 Field 'id_record' doesn't have a default value
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+

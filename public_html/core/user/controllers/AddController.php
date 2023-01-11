@@ -8,8 +8,21 @@ use core\user\models\Model;
 class AddController extends BaseUser
 {
 
-    protected function inputData(){
-        echo 2;
+    // определение действия
+    protected $action = 'add';
+
+    protected function inputData()
+    {
+
+        if(!$this->userId) $this->execBase();
+
+        $this->createTableData();
+
+
+        // Работа с данными из Post
+        $this->checkPost();
+
+
     }
 
 }

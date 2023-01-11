@@ -26,7 +26,7 @@ class BaseUser extends BaseController
     protected $data;
     protected $foreignData;
 
-    protected $adminPath;
+    protected $userPath;
 
     protected $messages;  // путь к служебным сообщениям
 
@@ -55,7 +55,7 @@ class BaseUser extends BaseController
 
         if(!$this->model) $this->model = Model::getInstance();
         if(!$this->menu) $this->menu = Settings::get('projectTables');
-        if(!$this->adminPath) $this->adminPath = PATH . Settings::get('routes')['admin']['alias'] . '/';
+        if(!$this->userPath) $this->userPath = PATH . Settings::get('routes')['user']['alias'] . '/';
 
 
         if(!$this->templateArr) $this->templateArr = Settings::get('templateArr');
@@ -64,7 +64,7 @@ class BaseUser extends BaseController
         if(!$this->messages) $this->messages = include $_SERVER['DOCUMENT_ROOT'] . PATH . Settings::get('messages') . 'informationMessages.php';
 
         // запрет на кеширование админки
-        $this->sendNoCacheHeaders();
+        //$this->sendNoCacheHeaders();
 
     }
 
@@ -72,21 +72,27 @@ class BaseUser extends BaseController
     // вывод шаблона
     protected function outputData(){
 
-        if(!$this->content){
-            $args = func_get_arg(0);
-            $vars = $args ? $args : [];
+//        if(!$this->content){
+//            $args = func_get_arg(0);
+//            $vars = $args ? $args : [];
+//
+//
+//            $this->content = $this->render($this->template, $vars);
+//        }
 
-            // доп проверка, можно убрать так как есть render в BaseController
-            //if(!$this->template) $this->template = ADMIN_TEMPLATE . 'show';
+        //$this->header = $this->render(USER_TEMPLATE . 'include/header');
+        //$this->footer = $this->render(USER_TEMPLATE . 'include/footer');
 
-            $this->content = $this->render($this->template, $vars);
-        }
+        //return $this->render(USER_TEMPLATE . 'layout/default');
 
-        $this->header = $this->render(ADMIN_TEMPLATE . 'include/header');
-        $this->footer = $this->render(ADMIN_TEMPLATE . 'include/footer');
 
-        return $this->render(ADMIN_TEMPLATE . 'layout/default');
+        $this->sendNoCacheHeaders();
+        $res = $this->data;
+
+        return json_encode($res);
+
     }
+
 
 
     // запрет на кеширование админки
@@ -96,6 +102,16 @@ class BaseUser extends BaseController
         @header("Cache-Control: no-cache, mush-revalidate");
         @header("Cache-Control: max-age=0");
         @header("Cache-Control: post-check=0,pre-check=0");  // for explore only
+
+
+        // для отправки данных в json
+//        header('Access-Control-Allow-Origin: *');
+//        header('Access-Control-Allow-Headers: *');
+//        header('Access-Control-Allow-Methods: *');
+//        header('Access-Control-Allow-Credentials: true');
+//        header('Content-type: json/application');
+
+
 
     }
 
@@ -108,14 +124,10 @@ class BaseUser extends BaseController
     protected  function createTableData($settings = false){
 
         if(!$this->table){
-            if($this->parameters){
-                $this->table = array_keys($this->parameters)[0];
-            }else{
-                if(!$settings){
-                    $settings = Settings::getInstance();
-                }
-                $this->table = Settings::get('defaultTable');
+            if(!$settings){
+                $settings = Settings::getInstance();
             }
+            $this->table = Settings::get('defaultTable');
         }
 
         // вернет список всех полей из таблицы
@@ -130,7 +142,7 @@ class BaseUser extends BaseController
 
 
 
-    // расширение для нашего фреймворка
+    // расширение для фреймворка
     protected function expansion($args = [], $settings = false){
 
         // на всякий случай проверяем на наличие _ в названии таблицы
@@ -266,8 +278,7 @@ class BaseUser extends BaseController
         if($this->isPost()){
             // валидация данных
             $this->clearPostFields($settings);
-            $this->table = $this->clearStr($_POST['table']);
-            unset($_POST['table']);
+
 
             // проверяем пришла ли таблица
             if(isset($this->table)){
@@ -300,11 +311,12 @@ class BaseUser extends BaseController
 
     // проверка на пустую строку
     protected function emptyFields($str, $answer, $arr = []){
-
         if(empty($str)){
             // добавляем ошибку
             $_SESSION['res']['answer'] = '<div class="error">' . $this->messages['empty'] . ' ' . $answer . '</div>';
-            $this->addSessionData($arr);
+            var_dump('<div class="error">' . $this->messages['empty'] . ' ' . $answer . '</div>');
+            //$this->addSessionData($arr);
+            exit();
         }
 
     }
@@ -399,6 +411,8 @@ class BaseUser extends BaseController
                         }
 
 
+
+
                     }
 
                 }
@@ -419,31 +433,35 @@ class BaseUser extends BaseController
         $method = 'add';
         $where = [];
 
-        // проверка редактируем мы или добавляем данные
-        if($_POST[$this->columns['id_row']]){
-            $id = is_numeric($_POST[$this->columns['id_row']]) ?
-                $this->clearNum($_POST[$this->columns['id_row']]) :
-                $this->clearStr($_POST[$this->columns['id_row']]);
 
-            if($id){
-                // добавляем условие where и переопределяем метод
-                $where = [$this->columns['id_row'] => $id];
-                $method = 'update';
-            }
+        // проверка редактируем мы или добавляем данные
+        if(isset($this->parameters['id'])){
+            $id = is_numeric($this->parameters['id']) ?
+                $this->clearNum($this->parameters['id']) :
+                $this->clearStr($this->parameters['id']);
+
+
+            // добавляем условие where и переопределяем метод
+            $where = [$this->columns['id_row'] => $id];
+            $method = 'update';
+            $_POST[$this->columns['id_row']] = $id;
         }
+
+
 
         foreach ($this->columns as $key => $item){
             // заменяем первичный ключ на NULL если его нет
-            if($key == $this->columns['id_row'] and $_POST[$this->columns['id_row']] === ''){
+            if($key == $this->columns['id_row'] and (!isset($_POST[$this->columns['id_row']]) or $_POST[$this->columns['id_row']] === '')){
                 $_POST[$this->columns['id_row']] = NULL;
             }
 
 
             // если встречаем дату
-            if(is_array($item) and ($item['Type'] === 'date' or $item['Type'] === 'datetime')){
-                // другая короткая запись if
-                !isset($_POST[$key]) && $_POST[$key] = 'NOW()';
-            }
+//            if(is_array($item) and ($item['Type'] === 'date' or $item['Type'] === 'datetime')){
+//                // другая короткая запись if
+//                !isset($_POST[$key]) && $_POST[$key] = 'NOW()';
+//            }
+
         }
 
         // обработка файлов
@@ -474,8 +492,8 @@ class BaseUser extends BaseController
             $answerSuccess = $this->messages['addSuccess'];
             $answerFail = $this->messages['addFail'];
         }else{  // если редактировали данные
-            $answerSuccess = $this->messages['updateSuccess'];
-            $answerFail = $this->messages['updateFail'];
+            $answerSuccess = $this->messages['editSuccess'];
+            $answerFail = $this->messages['editFail'];
         }
 
 
@@ -489,12 +507,16 @@ class BaseUser extends BaseController
 
         // если получилось выполнить sql запрос
         if($res_id){
+
             $_SESSION['res']['answer'] = '<div class="success">' . $answerSuccess . '</div>';
 
             if(!$returnId) $this->redirect();
 
             return $_POST[$this->columns['id_row']];
         }else{  // если получили ошибку
+
+            exit($answerFail);
+
             $_SESSION['res']['answer'] = '<div class="error">' . $answerFail . '</div>';
 
             if(!$returnId) $this->redirect();

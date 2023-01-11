@@ -24,16 +24,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\core\user" />
+      <recent name="C:\OpenServer\domains\fyuche_api\public_html" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\core\base" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\core\user\controllers" />
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\controllers" />
-      <recent name="C:\OpenServer\domains\fyuche_api\public_html\base\messages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\fyuche_api\public_html\core" />
@@ -47,7 +47,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673357303101</updated>
-      <workItem from="1673357304327" duration="10344000" />
+      <workItem from="1673357304327" duration="13383000" />
+      <workItem from="1673428347665" duration="10532000" />
     </task>
     <servers />
   </component>

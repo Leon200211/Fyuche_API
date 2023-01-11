@@ -70,6 +70,8 @@ abstract class BaseController
 
         $data = $this->$inputData();
 
+
+        // вывод данных
         if(method_exists($this, $outputData)){
             $page = $this->$outputData($data);
             if($page){

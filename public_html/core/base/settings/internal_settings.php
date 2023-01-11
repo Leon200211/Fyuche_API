@@ -7,6 +7,7 @@ defined('VG_ACCESS') or die('Access denied');
 // константы
 const TEMPLATE = 'templates/default/';
 const ADMIN_TEMPLATE = 'core/admin/views/';
+const USER_TEMPLATE = 'core/user/views/';
 const UPLOAD_DIR = 'userfiles/';
 
 const COOKIE_VERSION = '1.0.0';
@@ -23,7 +24,7 @@ const ADMIN_CSS_JS = [
 ];
 
 const USER_CSS_JS = [
-    'style' => [],
+    'style' => ['css/main.css'],
     'scripts' => []
 ];
 
@@ -40,6 +41,8 @@ function autoloadMainClasses($class_name){
     }
 }
 
+
+// Регистрирует заданную функцию в качестве реализации метода __autoload()
 spl_autoload_register('autoloadMainClasses');
 
 

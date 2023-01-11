@@ -13,11 +13,24 @@ class EditController  extends BaseUser
 {
 
 
+    // определение действия
+    protected $action = 'update';
+
     protected function inputData()
     {
-        echo 4;
-    }
 
+        if(!$this->userId) $this->execBase();
+
+        if(!isset($this->parameters['id'])){
+            exit('не указан id');
+        }
+
+        $this->createTableData();
+
+        // Работа с данными из Post
+        $this->checkPost();
+
+    }
 
 
 

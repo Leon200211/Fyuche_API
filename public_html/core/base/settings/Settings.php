@@ -62,7 +62,7 @@ class Settings
         'teacher' => ['name' => 'Переводsdf sdfsfsfтаблицы'],
     ];
 
-    private $defaultTable = 'articles';
+    private $defaultTable = 'notebook';
 
     // путь к служебным сообщениям
     private $messages = 'core/base/messages/';
@@ -114,12 +114,12 @@ class Settings
 
     // массив полей для валидации
     private $validation = [
-        'name' => ['empty' => true, 'trim' => true],
-        'price' => ['int' => true],
-        'login' => ['empty' => true, 'trim' => true],
-        'password' => ['crypt' => true, 'empty' => true],
-        'keywords' => ['count' => 70, 'trim' => true],
-        'description' => ['count' => 160, 'trim' => true],
+        'full_name' => ['empty' => true, 'trim' => true],
+        'phone' => ['empty' => true, 'trim' => true],
+        'email' => ['empty' => true, 'trim' => true],
+//        'password' => ['crypt' => true, 'empty' => true],
+//        'keywords' => ['count' => 70, 'trim' => true],
+//        'description' => ['count' => 160, 'trim' => true],
     ];
 
 

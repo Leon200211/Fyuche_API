@@ -182,3 +182,31 @@ Fault: 10-01-2023 19:13:42 - Отсутствует шаблон - templates/def
 file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
  In line121
 
+Fault: 10-01-2023 19:27:45 - Отсутствует шаблон - templates/default/index
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 19:27:50 - Отсутствует шаблон - templates/default/index
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 19:27:55 - Отсутствует шаблон - templates/default/index
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line121
+
+Fault: 10-01-2023 20:08:13 - Отсутствует шаблон - templates/default/index
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line123
+
+Fault: 10-01-2023 20:08:49 - Отсутствует шаблон - core/user/views/include/header
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\controllers\BaseController.php
+ In line123
+
+Fault: 11-01-2023 14:23:32 - Не верное имя файла для подключения - core/user/controllers/SdController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line40
+
+Fault: 11-01-2023 15:38:17 - Не верное имя файла для подключения - core/user/controllers/DelketeController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line40
+

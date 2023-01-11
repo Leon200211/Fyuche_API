@@ -11,6 +11,6 @@ const PATH = '/';
 const HOST = 'localhost';
 const USER = 'root';
 const PASS = 'root';
-const DB_NAME = 'fitlent_online_store';
+const DB_NAME = 'fyuche_api';
 
 
