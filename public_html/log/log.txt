@@ -210,3 +210,7 @@ Fault: 11-01-2023 15:38:17 - Не верное имя файла для подк
 file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
  In line40
 
+Fault: 11-01-2023 15:49:17 - Не верное имя файла для подключения - core/user/controllers/DhoeController
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\settings\internal_settings.php
+ In line40
+

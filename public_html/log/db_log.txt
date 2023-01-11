@@ -42,3 +42,11 @@ Fault: 11-01-2023 15:11:03 - Ошибка в SQL запросе: INSERT INTO not
 file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
  In line48
 
+Fault: 11-01-2023 15:49:22 - Ошибка в SQL запросе: SELECT notebook.id,notebook.id_record,notebook.full_name,notebook.company,notebook.phone,notebook.email,notebook.date_of_birth,notebook.photo,notebook.note FROM notebook  WHERE    - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
+Fault: 11-01-2023 16:25:04 - Ошибка в SQL запросе: SELECT notebook.id,notebook.id_record,notebook.full_name,notebook.company,notebook.phone,notebook.email,notebook.date_of_birth,notebook.photo,notebook.note FROM notebook  WHERE    - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+file C:\OpenServer\domains\fyuche_api\public_html\core\base\models\BaseModel.php
+ In line48
+
