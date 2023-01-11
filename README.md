@@ -56,6 +56,18 @@
 
 ### Данные
 
+Получение структуры таблицы (метод createTableData)
+
+![image](https://user-images.githubusercontent.com/91278041/211781495-a86142e1-417c-4fb6-941c-e727fd235586.png)
+
+Получение данных таблицы (метод createData)
+
+![image](https://user-images.githubusercontent.com/91278041/211786036-ad8b7a6f-2305-41c1-a887-c54064738d99.png)
+
+Пример данных на принимаемых моделями
+
+![image](https://user-images.githubusercontent.com/91278041/211825442-3cc0911f-a23f-4ce6-92bf-73f3efd5bfbe.png)
+
 
 ### Логгер ошибок
 
