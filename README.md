@@ -16,11 +16,11 @@
 Структура методов: 
 
     1.1. GET http://fyuche.api/                                (Получить все записи)
-    1.2. GET /api/v1/notebook/notebook/                        (Получить все записи)
-    1.3. GET /api/v1/notebook/notebook/show/id/<int:id>        (Получение определенной записи)
-    1.4. POST /api/v1/notebook/notebook/add                    (Добавление записи)
-    1.5. POST /api/v1/notebook/notebook/edit/id/<int:id>       (Изменение определенной записи)
-    1.6. DELETE /api/v1/notebook/notebook/delete/id/<int:id>   (Удаление определенной записи)
+    1.2. GET http://fyuche.api/notebook/                        (Получить все записи)
+    1.3. GET http://fyuche.api/notebook/show/id/<int:id>        (Получение определенной записи)
+    1.4. POST http://fyuche.api/notebook/add                    (Добавление записи)
+    1.5. POST http://fyuche.api/notebook/edit/id/<int:id>       (Изменение определенной записи)
+    1.6. DELETE http://fyuche.api/notebook/delete/id/<int:id>   (Удаление определенной записи)
     
     "notebook" - можно не указывать
     
